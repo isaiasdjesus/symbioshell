@@ -1,0 +1,15 @@
+ Ejecución en Raspberry Pi
+
+# 1. Actualiza tu sistema
+sudo apt update && sudo apt upgrade -y
+
+# 2. Instala librerías necesarias
+sudo apt install python3-pip git python3-gpiozero python3-picamera -y
+pip3 install numpy matplotlib
+
+# 3. Crea carpeta del proyecto y descarga código
+git clone https://github.com/tu-usuario/robot-hand-raspberry.git
+cd robot-hand-raspberry
+
+# 4. Ejecuta el controlador principal
+python3 robot_hand_controller.py
